@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C+CS 2021-2022: "Project: Recipe book"</title>
+        <meta charset="utf-8">
+        <style>
+        body{
+            background-color:rgb(209, 235, 210);
+        }
+        h1{
+            color:rgb(166, 0, 255);
+        }
+        #apple-pie{
+            color:rgb(110, 90, 16);
+        }
+        #cookie-sandwich{
+            color:rgb(66, 37, 3);
+        }
+        </style>
+    </head>
+    <body>
+       
+        <h1>Jib's Recipe Book</h1>
+        
+        <h2>Contents:</h2>
+        
+        <ol>
+            <li><a href="#apple-pie">Apple Pie</a> <h6>Recipe by: Pillsbury.com</h6></li>
+        <li><a href="#cookie-sandwich"> Cookie Dough Sandwich Cookies</a> <h6>Recipe by: Pillsbury.com</h6></li>
+        </ol>
+        
+        <br>
+        <br>
+        
+        <h2 id="apple-pie">Recipe #1: Apple Pie</h2>
+        
+        <ul>
+            <li>Time: 3 hours</li>
+            <li>Serves: 8</li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Apple_pie_14.jpg/1024px-Apple_pie_14.jpg" alt="apple pie" width="500">
+        <h6>Note: Results may vary</h6>
+        
+        <table>
+            <thead>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h4>Crust:</h4></td>
+                </tr>
+                <tr>
+                    <td>Refrigerated pie crusts</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    
+                    <td><h4>Filling:</h4></td>
+                    </tr>
+                    <tr>
+                        <td>Thinly sliced, peeled apples</td>
+                        <td>6 cups (6 medium)</td>
+                    </tr>
+                    <tr>
+                        <td>Sugar</td>
+                        <td>3/4 cup</td>
+                    </tr>
+                    <tr>
+                        <td>All-purpose flour</td>
+                        <td>2 tablespoons</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Ground cinnamon</td>
+                        <td>3/4 teaspoon</td>
+                    </tr>
+                    <tr>
+                        <td>Salt</td>
+                        <td>1/4 teaspoon</td>
+                    </tr>
+                    <tr> 
+                        <td>Ground nutmeg</td>
+                        <td>1/8 teaspoon</td>
+                    </tr>
+                    <tr>
+                        <td>Lemon juice</td>
+                        <td>1 tablespoon</td>
+                    </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Step 1:</strong> Heat oven to 425°F. Place 1 pie crust in ungreased 9-inch glass pie plate. Press firmly against side and bottom.</p>
+        
+        <p><strong>Step 2:</strong> In large bowl, gently mix filling ingredients; spoon into crust-lined pie plate. Top with second crust. Wrap excess top crust under bottom crust edge, pressing edges together to seal; flute. Cut slits or shapes in several places in top crust.</p> 
+        <p><strong>Step 3:</strong>
+Bake 40 to 45 minutes or until apples are tender and crust is golden brown. Cover edge of crust with 2- to 3-inch wide strips of foil after first 15 to 20 minutes of baking to prevent excessive browning. Cool on cooling rack at least 2 hours before serving.</p>
+        
+        <h3>Details/Tips</h3>
+        <ul>
+            <li><strong>Nutrition:</strong> 230 Calories, 6g Total Fat, 1g Protein, 43g Total Carbohydrate, 27g Sugars</li> 
+            <li>The flour tossed with the fresh apples turns their juices into a thickened, spiced sauce during baking. Mix it with the sugar and spices before tossing the mixture with the apples.</li>
+            <li>Two (21-oz.) cans of more fruit apple pie filling can be used if you’re short on time.</li>
+            <li>Let your apple pie cool for at least 2 hours before cutting into it. The filling will thicken as it cools, making it easier to slice.</li>
+            <li>To make Caramel-Pecan Apple Pie: right after removing the pie from the oven, drizzle with 1/3 cup caramel ice cream topping. Sprinkle with 2 to 4 tablespoons chopped pecans.</li>
+            <li>To freeze Baked Pie: Assemble and bake pie as directed in recipe. Cool completely. Wrap pie tightly with plastic wrap. Place pie in a 2-gallon freezer storage bag; seal. Freeze up to 4 months. To reheat, thaw pie in refrigerator overnight. Remove bag and plastic wrap. Cover with foil, bake at 350°F for 25 to 30 minutes or until warm.</li>
+        </ul>
+        
+        <h2 id="cookie-sandwich">Recipe #2: Cookie Dough Sandwich Cookies</h2>
+        
+        <ul>
+            <li>Time: 1 hour and 10 minutes</li>
+            <li>Serves: 6</li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Chipwich_ice_cream_sandwich.jpg/640px-Chipwich_ice_cream_sandwich.jpg" alt="Cookie Dough Sandwich Cookies" width="500">
+        <h6>Note: Results may vary</h6>
+        
+        <table>
+            <thead>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>roll of refrigerated chocolate chip cookie dough</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Step 1:</strong> Heat oven to 350°F. On ungreased cookie sheet, spoon 12 tablespoonfuls of cookie dough 2 inches apart. Cover remaining cookie dough with plastic wrap; refrigerate. </p>
+        
+        <p><strong>Step 2:</strong> Bake 12 to 15 minutes or until edges are golden brown. Cool 1 minute; remove from cookie sheet to cooling rack. Cool completely, about 30 minutes.</p> 
+        <p><strong>Step 3:</strong> When ready to assemble sandwich cookies, remove and uncover remaining cookie dough from refrigerator; let stand at room temperature 10 minutes to soften. For each sandwich cookie, spread 2 tablespoons softened cookie dough on bottom of 1 baked cookie. Top with second cookie, bottom side down; gently press together. Repeat with remaining baked cookies and softened cookie dough. Serve immediately, or refrigerate up to 8 hours. </p>
+        
+        <h3>Details/Tips</h3>
+        <ul>
+            <li><strong>Nutrition:</strong> 330 Calories, 16g Total Fat, 1g Protein, 45g Total Carbohydrate, 29g Sugars</li> 
+            <li>Cookies turn out best when baked one sheet at a time on the middle oven rack.</li>
+            <li>For best results, enjoy cookie sandwiches the same day.</li>
+        </ul>
+
+        
+    <p><em>Source: <a href="https://www.pillsbury.com/recipes/">Pillsbury.com</a></em></p>
+    
+    </body>
+</html>
