@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>C+CS 2021-2022: "Project: Travel webpage"</title>
+    </head>
+    <body>
+    <style>
+        body {background-color: rgb(129, 232, 114);
+        }
+        .yaywow {color: rgb(209, 25, 209);
+        }
+        #winston {color: yellow;
+        }
+        
+    </style>
+    
+        <h1>Travel to Glacier National Park!!!!!!! :)</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Mount_Gould_from_Grinnell_Glacier_Trail_2.JPG" alt="picture of grinnel lake" width="500">
+        <h2 class="yaywow">yay</h2>
+        
+        <p>You are <strong>required</strong> to go to it because you can see cool thing </p>
+        <h6>i have never been there but internet says its good place</h6>
+        
+        <ul><strong>you can also do cool thing like:</strong>
+        <li>hike</li>
+        <li>camp</li>
+        <li>guided tour</li>
+        <li> snowshoeing</li>
+        <li>skiing</li>
+        <li>many other thing</li>
+        </ul>
+        
+        
+        <ol><strong>Top thing to do in park</strong>
+            <li>Going-To-The-Sun Road: Scenic Road</li>
+            <li>Logan Pass: Highest point in the park</li>
+            <li>Hike</li>
+            <li>Visit Many Glacier: One of the most scenic areas of the park</li>
+        </ol>
+        <h1 class="yaywow">wow</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/St_Mary_Lake.jpg" alt="picture of 2nd largest lake in park" width="500">
+        <p>Saint Mary Lake - The 2nd largest lake in the park.</p>
+    <p> There are many things to see there. You can shoose from 700 miles of hiking trails. There are also 13 designated camping areas and you can visit year-round depending on what activities you like. </p> 
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Grinnell_Glacier_2019-08-06.jpg/2560px-Grinnell_Glacier_2019-08-06.jpg
+" alt="Grinnell Glacier" width="550">
+    
+    <br>
+    <br>
+    <p>Source of Images: <a href="https://en.wikipedia.org/wiki/Glacier_National_Park_(U.S.)">Wikipedia</a></p>
+    
+    <br>
+    <br>
+    
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" width="25">
+    <h6 id="winston">winston</h6>
+    
+    </body>
+</html>
+
