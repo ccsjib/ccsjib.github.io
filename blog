@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>C+CS 2021-2022: "Project: Blog"</title>
+        <style>
+        body {
+            background-color: rgb(206, 239, 240);
+            font-family: "Segoe UI", sans-serif;
+        }
+            #page-heading {
+                font-family: "MS Gothic", monospace;
+                font-weight: bold;
+                text-align: center;
+                font-style: italic;
+                color: rgb(0, 106, 255);
+                text-shadow: 2px 3px rgb(255, 255, 255);
+                background: rgb(81, 255, 0);
+                width: 550px;
+                height: 100px;
+                
+                
+            }
+            
+        
+        </style>
+    </head>
+    <body>
+        
+        
+        
+        <h1 id="page-heading">Jib's Blog</h1>
+
+        <h3>Contents</h3>
+        <ul>
+            <li><a href="#first-post">First post!</a></li>
+            <li><a href="#second-post">Second post!!</a></li>
+        </ul>
+        <br>
+        <br>
+        
+        <h2 id="first-post">First Post</h2>
+        <h6>Posted on some date in some year</h6>
+        
+        <p><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet luctus sem, eu mollis augue hendrerit congue. Morbi congue felis placerat purus tincidunt, in consectetur lacus molestie. Vestibulum sollicitudin eleifend leo, sed consectetur quam vestibulum sit amet.</p> 
+        <p>Vivamus viverra diam quis leo facilisis, eget vehicula est ornare. Fusce porta nisl vitae accumsan pulvinar. Suspendisse quis nisl non dui semper hendrerit non in arcu. Proin et sagittis libero. Aliquam a sem eget leo bibendum scelerisque. Nunc fringilla diam ac pretium dapibus. Curabitur sodales fringilla condimentum. Integer eget magna tortor. Cras eros tellus, malesuada non nisl ut, placerat tincidunt lorem.</p>
+        
+        
+        <h2 id="second-post">Second Post</h2>
+        <h6>Posted on some date in some year</h6>
+
+        <p>Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit. Fusce laoreet luctus sem, eu mollis augue hendrerit congue. Morbi congue felis placerat purus tincidunt, in consectetur lacus molestie. Vestibulum sollicitudin eleifend leo, sed consectetur quam vestibulum sit amet.</p> 
+<p>Vivamus viverra diam quis leo facilisis, eget vehicula est ornare. Fusce porta nisl vitae accumsan pulvinar. Suspendisse quis nisl non dui semper hendrerit non in arcu. Proin et sagittis libero. Aliquam a sem eget leo bibendum scelerisque. Nunc fringilla diam ac pretium dapibus. Curabitur sodales fringilla condimentum. Integer eget magna tortor. Cras eros tellus, malesuada non nisl ut, placerat tincidunt lorem.</p>
+        
+        
+    </body>
+</html>
