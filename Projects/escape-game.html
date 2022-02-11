@@ -16,8 +16,26 @@
     </head>
     <body>
       <h1>escape :)</h1>
-       <img src="https://ccsjib.github.io/images/Living-Room-Scene_001.png"></img>
-       <p>yay</p>
+       <img src="https://ccsjib.github.io/images/bolt-cutters.jpg" alt="bolt cutters"></img>
+       <img src="https://ccsjib.github.io/images/padlock.jpg" alt="padlock"></img>
+
+       <P>You're gonna have to <span id="cut-word">cut</span> your way out of this one.</P>
+
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+       <script>
+           $("#cut-word").on("cut", function(){
+             var testParagraph = $("<p>")
+            testParagraph.text("testing eventlistener oncut");
+            testParagraph.appendTo("body");
+
+           });
+           //Somehow need to use cookies so my page remembers what I did.
+           //load HTML page with reload icon image on laptop screen in background
+           //When browser reload stopped, first challenge completed
+           //Reload icon disappears
+           //
+       </script>
 
        
       </body>
