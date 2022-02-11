@@ -24,7 +24,8 @@
 
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
        <script>
-           $("#cut-word").on("cut", function(){
+         //https://mkyong.com/jquery/how-to-detect-copy-paste-and-cut-behavior-with-jquery/
+           $("#cut-word").bind("cut", function(){
              var testParagraph = $("<p>")
             testParagraph.text("testing eventlistener oncut");
             testParagraph.appendTo("body");
