@@ -16,19 +16,22 @@
     </head>
     <body>
       <h1>escape :)</h1>
-       <img src="https://ccsjib.github.io/images/bolt-cutters.jpg" alt="bolt cutters"></img>
-       <img src="https://ccsjib.github.io/images/padlock.jpg" alt="padlock"></img>
+       <img src="https://ccsjib.github.io/images/bolt-cutters.jpg" alt="bolt cutters" width="100px"></img>
+       <img id="padlock" src="https://ccsjib.github.io/images/padlock.jpg" alt="padlock" width="100px"></img>
 
-       <P>You're gonna have to <span id="cut-word">cut</span> your way out of this one.</P>
-
+       <p id="cut-word">You're gonna have to cut your way out of this one.</p>
+       <p id="testingevent"></p>
 
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
        <script>
          //https://mkyong.com/jquery/how-to-detect-copy-paste-and-cut-behavior-with-jquery/
-           $("#cut-word").bind("cut", function(){
-             var testParagraph = $("<p>")
-            testParagraph.text("testing eventlistener oncut");
-            testParagraph.appendTo("body");
+           //$("#cut-word").bind("cut", function(){
+             //console.log("testing eventlistener oncut")
+             $("#padlock").attr("src", "https://ccsjib.github.io/images/unlocked-padlock.jpg")
+             
+             //var testParagraph = $("<p>")
+            //testParagraph.text("testing eventlistener oncut");
+            //testParagraph.appendTo("body");
 
            });
            //Somehow need to use cookies so my page remembers what I did.
