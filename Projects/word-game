@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Word game </title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            form {
+                font-size: 1.5em;
+            }
+            .scrambled, input, button {
+                font-family: monospace;
+                font-size: 2em;
+            }
+            
+        </style>
+    </head>
+    <body>
+    
+    <h1>Word game!</h1>
+    <form id="joke-form">
+        <label>
+            Unscramble these letters to form a word:<Br>
+            <span class="scrambled">INWNSOT</span>
+            <br>
+            <input type="text" size="10" id="answer">
+        </label>
+        <button type="submit">Check</button>
+        <div id="result"></div>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        // when the user submits the form,
+        //   check that their answer is correct
+        //   and show them appropriate message
+        $("#joke-form").on("submit", function(e) {
+            e.preventDefault();
+            var answer = $("#answer").val();
+            //console.log(answer);
+            if (answer === "winston" || answer === "WINSTON") {
+                $("#result").text("yay its winston").css("color", "green");
+                var imgWinston = $("<img>")
+                imgWinston.attr("src", "https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png");
+                imgWinston.appendTo("body");
+                console.log("result winston");
+            } else {
+                $("#result").text("oh noes it wrong").css("color", "red"); 
+                
+                var imgOhNo = $("<img>")
+                imgOhNo.attr("src", "https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/OhNoes.png"); 
+                imgOhNo.appendTo("body");
+                console.log("oh noesss");
+                
+            }
+            
+        });
+    </script>
+    </body>
+</html>
