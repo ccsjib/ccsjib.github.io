@@ -16,25 +16,40 @@
     </head>
     <body>
       <h1>escape :)</h1>
-       <img src="https://ccsjib.github.io/images/bolt-cutters.jpg" alt="bolt cutters" width="100px"></img>
-       <img id="padlock" src="https://ccsjib.github.io/images/padlock.jpg" alt="padlock" width="100px"></img>
+      <h2 id="level"></h2>
+       <img id="bolt-cutters" src="https://ccsjib.github.io/images/bolt-cutters.jpg" alt="bolt cutters" width="100px"></img>
+       <img id="padlock" src="https://ccsjib.github.io/images/padlock.jpg" alt="padlock"></img>
 
        <p id="cut-word">You're gonna have to cut your way out of this one.</p>
-       <p id="testingevent"></p>
+       <p id="successful"></p>
 
+       <button type="disabled" id="next">next :)</button>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
        <script>
+         
          //https://mkyong.com/jquery/how-to-detect-copy-paste-and-cut-behavior-with-jquery/
-           //$("#cut-word").bind("cut", function(){
-             //console.log("testing eventlistener oncut")
-             $("#padlock").attr("src", "https://ccsjib.github.io/images/unlocked-padlock.jpg");
+         var boltCutterHeight = $("#bolt-cutters").height();
+         //console.log(boltCutterHeight);
+         var padlockHeight = $("#padlock").height();
+         var lockWidth = 100;
+         //https://stackoverflow.com/questions/13424721/javacript.jquery-select-the-larger-of-two-numbers
+         var imgHeight = Math.max(boltCutterHeight, padlockHeight);
+         console.log(imgHeight);
+         $("#next").hide();
+         $("#padlock").attr("width", lockWidth + "px");
+           $("#cut-word").bind("cut", function(){
+             //console.log("testing eventlistener oncut");
+             $("#padlock").attr({"src": "https://ccsjib.github.io/images/unlocked-padlock.jpg", "height": imgHeight});
+             $("#successful").html("<strong>yay you did it :)</strong>");
+             $("#next").show(1000);
+            });
              //not working???
              
              //var testParagraph = $("<p>")
             //testParagraph.text("testing eventlistener oncut");
             //testParagraph.appendTo("body");
 
-           });
+          
            //Somehow need to use cookies so my page remembers what I did.
            //load HTML page with reload icon image on laptop screen in background
            //When browser reload stopped, first challenge completed
