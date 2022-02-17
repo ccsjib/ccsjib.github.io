@@ -16,7 +16,10 @@
     </head>
     <body>
       <h1>escape :)</h1>
+      
       <h2 id="level"></h2>
+      
+      <div id="entirelevel">
        <img id="bolt-cutters" src="https://ccsjib.github.io/images/bolt-cutters.jpg" alt="bolt cutters" width="100px"></img>
        <img id="padlock" src="https://ccsjib.github.io/images/padlock.jpg" alt="padlock"></img>
 
@@ -24,6 +27,7 @@
        <p id="successful"></p>
 
        <button type="disabled" id="next">next :)</button>
+       </div>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
        <script>
          
@@ -35,6 +39,13 @@
          //https://stackoverflow.com/questions/13424721/javacript.jquery-select-the-larger-of-two-numbers
          var imgHeight = Math.max(boltCutterHeight, padlockHeight);
          console.log(imgHeight);
+         var levelNum = 1;
+         var levelUp = function(){
+          $("#entirelevel").text("");
+          levelNum ++;
+          $("#level").text("level " + levelNum + " :)");
+         };
+         
          $("#next").hide();
          $("#padlock").attr("width", lockWidth + "px");
            $("#cut-word").bind("cut", function(){
@@ -42,13 +53,17 @@
              $("#padlock").attr({"src": "https://ccsjib.github.io/images/unlocked-padlock.jpg", "height": imgHeight});
              $("#successful").html("<strong>yay you did it :)</strong>");
              $("#next").show(1000);
-             $("")
             });
+           $("#next").on("click", function(){
+              levelUp();
+           });
+           $("#entirelevel").html("<img src = ")
+          
              //not working???
              
              //var testParagraph = $("<p>")
-            //testParagraph.text("testing eventlistener oncut");
-            //testParagraph.appendTo("body");
+             //testParagraph.text("testing eventlistener oncut");
+             //testParagraph.appendTo("body");
 
           
            //Somehow need to use cookies so my page remembers what I did.
