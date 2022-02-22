@@ -52,12 +52,14 @@
              //console.log("testing eventlistener oncut");
              $("#padlock").attr({"src": "https://ccsjib.github.io/images/unlocked-padlock.jpg", "height": imgHeight});
              $("#successful").html("<strong>yay you did it :)</strong>");
+             console.log(imgHeight);
              $("#next").show(1000);
             });
            $("#next").on("click", function(){
               levelUp();
+              $("#entirelevel").html("<img src =\"https://ccsjib.github.io/images/fullscreen.jpg\"></img>");
            });
-           $("#entirelevel").html("<img src =\"https://ccsjib.github.io/images/fullscreen/jpg\"></img>");
+           
           
              //not working???
              
