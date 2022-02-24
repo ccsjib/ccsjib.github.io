@@ -17,12 +17,13 @@
     <body>
       <h1>escape :)</h1>
       
-      <h2 id="level">level 2 :)</h2>
+      <h2 id="level">level 1</h2>
       
       <div id="entirelevel">
-       <img id="screen" src="https://ccsjib.github.io/images/fullscreen.jpg" alt="bolt cutters" width="200px"></img>
-       
-       <p id="cut-word">Isn't TV always better in full screen?</p>
+       <img id="bolt-cutters" src="https://ccsjib.github.io/images/bolt-cutters.jpg" alt="bolt cutters" width="200px"></img>
+       <img id="padlock" src="https://ccsjib.github.io/images/padlock.jpg" alt="padlock"></img>
+
+       <p id="cut-word">You're gonna have to cut your way out of this one.</p>
        <p id="successful"></p>
 
        <button type="disabled" id="next">next :)</button>
@@ -30,23 +31,34 @@
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
        <script>
          
+         //https://mkyong.com/jquery/how-to-detect-copy-paste-and-cut-behavior-with-jquery/
+         var boltCutterHeight = $("#bolt-cutters").height();
+         //console.log(boltCutterHeight);
+         var padlockHeight = $("#padlock").height();
+         var lockWidth = 100;
+         //https://stackoverflow.com/questions/13424721/javacript.jquery-select-the-larger-of-two-numbers
          var imgHeight = 100
-
-         //https://stackoverflow.com/questions/29925982/jquery-fullscreenchange-and-on-click-event
+         //Math.max(boltCutterHeight, padlockHeight);
+         console.log(imgHeight);
+         //var levelNum = 1;
+         //var levelUp = function(){
+          //$("#entirelevel").text("");
+          //levelNum ++;
+         // $("#level").text("level " + levelNum + " :)");
+         };
+         
          $("#next").hide();
-           $(window).on("resize", function(e) {
-             if(screen.width === window.innerWidth) {
-            e.preventDefault(); 
-            console.log("fullscreenchange worked!"); 
-            $("#successful").html("<strong>yay you did it :)</strong>");
+         $("#padlock").attr("width", lockWidth + "px");
+           $("#cut-word").bind("cut", function(){
+             //console.log("testing eventlistener oncut");
+             $("#padlock").attr({"src": "https://ccsjib.github.io/images/unlocked-padlock.jpg", "height": 120});
+             $("#successful").html("<strong>yay you did it :)</strong>");
+             console.log(imgHeight);
              $("#next").show(1000);
-             }
             });
             //https://stackoverflow.com/questions/2238368/how-to-make-a-button-redirect-to-another-page-using-jquery-or-just-javascript
-            //https://stackoverflow.com/questions/34422052/how-to-detect-browser-has-gone-to-full-screen/35178632
-           $("#next").on("click", function(e){
-               e.preventDefault();
-             window.location.href ="/projects/escape-game2.html";
+           $("#next").on("click", function(){
+             window.location.href ="escape-game2.html";
               levelUp();
               $("#entirelevel").html("<img src =\"https://ccsjib.github.io/images/fullscreen.jpg\" </img>");
            });
