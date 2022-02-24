@@ -17,68 +17,51 @@
     <body>
       <h1>escape :)</h1>
       
+      <!-- level # -->
       <h2 id="level">level 1</h2>
       
       <div id="entirelevel">
        <img id="bolt-cutters" src="https://ccsjib.github.io/images/bolt-cutters.jpg" alt="bolt cutters" width="200px"></img>
-       <img id="padlock" src="https://ccsjib.github.io/images/padlock.jpg" alt="padlock"></img>
+       <img id="padlock" src="https://ccsjib.github.io/images/padlock.jpg" alt="padlock" width="100px"></img>
 
-       <p id="cut-word">You're gonna have to cut your way out of this one.</p>
+       <p id="cut-selection">You're gonna have to cut your way out of this one.</p>
        <p id="successful"></p>
 
+       <!-- code for button which links to new HTML file for next level-->
        <button type="disabled" id="next">next :)</button>
        </div>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
        <script>
          
          //https://mkyong.com/jquery/how-to-detect-copy-paste-and-cut-behavior-with-jquery/
-         var boltCutterHeight = $("#bolt-cutters").height();
-         //console.log(boltCutterHeight);
-         var padlockHeight = $("#padlock").height();
-         var lockWidth = 100;
          //https://stackoverflow.com/questions/13424721/javacript.jquery-select-the-larger-of-two-numbers
-         var imgHeight = 100
-         //Math.max(boltCutterHeight, padlockHeight);
-         console.log(imgHeight);
-         //var levelNum = 1;
-         //var levelUp = function(){
-          //$("#entirelevel").text("");
-          //levelNum ++;
-         // $("#level").text("level " + levelNum + " :)");
-         //};
-         
+         //hides next level button
          $("#next").hide();
-         $("#padlock").attr("width", lockWidth + "px");
-           $("#cut-word").bind("cut", function(){
+        //detects when user cuts sentence underneath pictures 
+        $("#cut-selection").bind("cut", function(){
              //console.log("testing eventlistener oncut");
+             //changes locked padlock to unlocked padlock image
              $("#padlock").attr({"src": "https://ccsjib.github.io/images/unlocked-padlock.jpg", "height": 120});
+             //adds success message
              $("#successful").html("<strong>yay you did it :)</strong>");
-             console.log(imgHeight);
+             //shows next level button
              $("#next").show(1000);
             });
             //https://stackoverflow.com/questions/2238368/how-to-make-a-button-redirect-to-another-page-using-jquery-or-just-javascript
-           $("#next").on("click", function(){
+           //when next level button is clicked, direct user to new HTML file for next level
+            $("#next").on("click", function(){
              window.location.href ="escape-game2.html";
-              levelUp();
-              $("#entirelevel").html("<img src =\"https://ccsjib.github.io/images/fullscreen.jpg\" </img>");
            });
            
-          //https://stackoverflow.com/questions/22052950/trigger-next-level-in-our-javascript-game
-          //I can just make a new html file for every level!!
-             //not working???
-             
-             //var testParagraph = $("<p>")
-             //testParagraph.text("testing eventlistener oncut");
-             //testParagraph.appendTo("body");
-
              // html dom events: https://www.w3schools.com/jsref/dom_obj_event.asp
 
-          
-           //Somehow need to use cookies so my page remembers what I did.
-           //load HTML page with reload icon image on laptop screen in background
-           //When browser reload stopped, first challenge completed
-           //Reload icon disappears
-           //level 2 fullscreen!
+          /*
+          Original ideas and psuedocode: 
+           Somehow need to use cookies so my page remembers what I did.
+           load HTML page with reload icon image on laptop screen in background
+           When browser reload stopped, first challenge completed
+           Reload icon disappears
+           */
        </script>
 
        
