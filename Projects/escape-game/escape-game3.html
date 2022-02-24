@@ -20,9 +20,9 @@
       <h2 id="level">level 3 :)</h2>
       
       <div id="entirelevel">
-       <img id="tempwinston" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png" alt="winston" width="200px"></img>
+       <img id="printer" src="https://ccsjib.github.io/images/printer.jpg" alt="printer" width="200px"></img>
        
-       <p id="cut-word">wow you made it to level 3 yay :)))</p>
+       <p id="cut-word">wow you made it to level 3 yay :))) print stuff</p>
        <p id="successful"></p>
 
        <button type="disabled" id="next">next :)</button>
@@ -32,15 +32,14 @@
          
          var imgHeight = 100
 
-         //https://stackoverflow.com/questions/29925982/jquery-fullscreenchange-and-on-click-event
+         //https://stackoverflow.com/questions/18325025/how-to-detect-window-print-finish
          $("#next").hide();
-           //$(window).on("", function(e) {
-    
+           $(window).on("afterprint", function(e) {
             e.preventDefault(); 
             console.log("fullscreenchange worked!"); 
             $("#successful").html("<strong>yay you did it :)</strong>");
              $("#next").show(1000);
-           //});
+           });
             //https://stackoverflow.com/questions/2238368/how-to-make-a-button-redirect-to-another-page-using-jquery-or-just-javascript
             //https://stackoverflow.com/questions/34422052/how-to-detect-browser-has-gone-to-full-screen/35178632
            $("#next").on("click", function(e){
@@ -49,23 +48,6 @@
               levelUp();
               $("#entirelevel").html("<img src =\"https://ccsjib.github.io/images/fullscreen.jpg\" </img>");
            });
-           
-          //https://stackoverflow.com/questions/22052950/trigger-next-level-in-our-javascript-game
-          //I can just make a new html file for every level!!
-             //not working???
-             
-             //var testParagraph = $("<p>")
-             //testParagraph.text("testing eventlistener oncut");
-             //testParagraph.appendTo("body");
-
-             // html dom events: https://www.w3schools.com/jsref/dom_obj_event.asp
-
-          
-           //Somehow need to use cookies so my page remembers what I did.
-           //load HTML page with reload icon image on laptop screen in background
-           //When browser reload stopped, first challenge completed
-           //Reload icon disappears
-           //level 2 fullscreen!
        </script>
 
        
