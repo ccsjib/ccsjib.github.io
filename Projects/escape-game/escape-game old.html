@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Raleway"> <!--Google Fonts API code (copy paste)-->
+    <head>
+        <title>escape :)</title>
+        <meta charset="utf-8">
+        <style>
+        body {
+          background-color: rgb(0, 205, 255);
+          font-family: "Raleway", monospace;
+        }
+         
+        
+        </style>
+    </head>
+    <body>
+      <h1>escape :)</h1>
+      
+      <h2 id="level">level 1</h2>
+      
+      <div id="entirelevel">
+       <img id="bolt-cutters" src="https://ccsjib.github.io/images/bolt-cutters.jpg" alt="bolt cutters" width="200px"></img>
+       <img id="padlock" src="https://ccsjib.github.io/images/padlock.jpg" alt="padlock"></img>
+
+       <p id="cut-word">You're gonna have to cut your way out of this one.</p>
+       <p id="successful"></p>
+
+       <button type="disabled" id="next">next :)</button>
+       </div>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+       <script>
+         
+         //https://mkyong.com/jquery/how-to-detect-copy-paste-and-cut-behavior-with-jquery/
+         var boltCutterHeight = $("#bolt-cutters").height();
+         //console.log(boltCutterHeight);
+         var padlockHeight = $("#padlock").height();
+         var lockWidth = 100;
+         //https://stackoverflow.com/questions/13424721/javacript.jquery-select-the-larger-of-two-numbers
+         var imgHeight = 100
+         //Math.max(boltCutterHeight, padlockHeight);
+         console.log(imgHeight);
+         //var levelNum = 1;
+         //var levelUp = function(){
+          //$("#entirelevel").text("");
+          //levelNum ++;
+         // $("#level").text("level " + levelNum + " :)");
+         //};
+         
+         $("#next").hide();
+         $("#padlock").attr("width", lockWidth + "px");
+           $("#cut-word").bind("cut", function(){
+             //console.log("testing eventlistener oncut");
+             $("#padlock").attr({"src": "https://ccsjib.github.io/images/unlocked-padlock.jpg", "height": 120});
+             $("#successful").html("<strong>yay you did it :)</strong>");
+             console.log(imgHeight);
+             $("#next").show(1000);
+            });
+            //https://stackoverflow.com/questions/2238368/how-to-make-a-button-redirect-to-another-page-using-jquery-or-just-javascript
+           $("#next").on("click", function(){
+             window.location.href ="escape-game2.html";
+              levelUp();
+              $("#entirelevel").html("<img src =\"https://ccsjib.github.io/images/fullscreen.jpg\" </img>");
+           });
+           
+          //https://stackoverflow.com/questions/22052950/trigger-next-level-in-our-javascript-game
+          //I can just make a new html file for every level!!
+             //not working???
+             
+             //var testParagraph = $("<p>")
+             //testParagraph.text("testing eventlistener oncut");
+             //testParagraph.appendTo("body");
+
+             // html dom events: https://www.w3schools.com/jsref/dom_obj_event.asp
+
+          
+           //Somehow need to use cookies so my page remembers what I did.
+           //load HTML page with reload icon image on laptop screen in background
+           //When browser reload stopped, first challenge completed
+           //Reload icon disappears
+           //level 2 fullscreen!
+       </script>
+
+       
+      </body>
