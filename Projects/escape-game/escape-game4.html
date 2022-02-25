@@ -15,7 +15,37 @@
         </style>
     </head>
     <body>
-        <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Winston.png">
+      <h1>escape :)</h1>
+      
+      <h2 id="level">level 4 :)</h2>
+      
+      <div id="entirelevel">
+       <img id="printer" src="https://ccsjib.github.io/images/winston.jpg" alt="printer" width="200px"></img>
+       
+       <p id="cut-word">wow you made it to level 3 yay :))) print stuff</p>
+       <p id="successful"></p>
+
+       <button type="disabled" id="next">next :)</button>
+       </div>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+       <script>
+         
+
+         
+         $("#next").hide();
+           $(window).on("afterprint", function(e) {
+            e.preventDefault(); 
+            console.log("fullscreenchange worked!"); 
+            $("#successful").html("<strong>yay you did it :)</strong>");
+             $("#next").show(1000);
+           });
+            //https://stackoverflow.com/questions/2238368/how-to-make-a-button-redirect-to-another-page-using-jquery-or-just-javascript
+            //https://stackoverflow.com/questions/34422052/how-to-detect-browser-has-gone-to-full-screen/35178632
+           $("#next").on("click", function(e){
+               e.preventDefault();
+                window.location.href ="escape-game4.html";
+           });
+       </script>
 
        
       </body>
