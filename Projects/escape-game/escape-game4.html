@@ -38,38 +38,29 @@
        <!--https://jqueryui.com/-->
        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
        <script>
+         //https://jqueryui.com/droppable/  -- script code taken from here
         $( function() {
     //$( "#draggable" ).draggable({ revert: "valid" });
     $( "#winston" ).draggable({ revert: "invalid" });
- 
     $( "#bighouse" ).droppable({
       classes: {
         "ui-droppable-active": "ui-state-active",
         "ui-droppable-hover": "ui-state-hover"
       },
       drop: function( event, ui ) {
-        $( this )
-          .addClass( "ui-state-highlight" )
-          .find( "p" )
-            .html( "Dropped!" );
+        $("#successful").html("<strong>yay you did it :)</strong>");
+             $("#next").show(1000);
       }
     });
   } );
-         $("#next").hide();
-           $(window).on("afterprint", function(e) {
-            e.preventDefault(); 
-            console.log("fullscreenchange worked!"); 
-            $("#successful").html("<strong>yay you did it :)</strong>");
-             //$("#next").show(1000);
-           });
             //https://stackoverflow.com/questions/2238368/how-to-make-a-button-redirect-to-another-page-using-jquery-or-just-javascript
             //https://stackoverflow.com/questions/34422052/how-to-detect-browser-has-gone-to-full-screen/35178632
            $("#next").on("click", function(e){
                e.preventDefault();
-                window.location.href ="escape-game4.html";
+                window.location.href ="escape-game5.html";
            });
        </script>
-       /
+       
       </div>
       </body>
 
