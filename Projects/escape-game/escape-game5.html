@@ -11,25 +11,21 @@
           font-family: "Raleway", monospace;
         }
 
-        /* #winston { 
-          width: 200px; 
-        } */
-        #winston { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
-  #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
         
         </style>
     </head>
     <body>
-      <h1>escape :)</h1>
+      <h1>YOU WIN :)</h1>
       
+      <!-- level # -->
       <h2 id="level">level 5 :)</h2>
       
       <div id="entirelevel">
        <img id="winston"  class="ui-widget-content" src="https://ccsjib.github.io/images/winston.jpg" alt="winston"></img>
-       <img id="house" src="https://ccsjib.github.io/images/house.jpg" alt="house" width="200px"></img>
-       <img id="bighouse" class="ui-widget-header" src="https://ccsjib.github.io/images/bighouse.jpg" alt="bighouse" width="400px" height="auto" position="absolute" left="1000px"></img>
+       <img id="house" src="https://ccsjib.github.io/images/Living-Room-Scene_001.png" alt="living-room" width="200px"></img>
        
-       <p id="cut-word">:)</p>
+       <h1 id="hint">the game end here for now :)</p>
+       <!-- code for hidden button which shows and links to new HTML file for next level when level completed-->
        <p id="successful"></p>
 
        <button type="disabled" hidden id="next">next :)</button>
@@ -37,7 +33,7 @@
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
        <!--https://jqueryui.com/-->
        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-       <script>
+       <!-- <script>
          
     
          $("#next").hide();
@@ -52,24 +48,12 @@
            $("#next").on("click", function(e){
                e.preventDefault();
                 window.location.href ="escape-game4.html";
-           });
-       </script>
+                
+           }); 
+       </script> -->
        
       </div>
       </body>
 
 
-      <!--$ ( function() { 
-        $("#winston").draggable({});
-        $("#bighouse").droppable({
-        classes: {
-          "ui-droppable-active": "ui-state-active", 
-          "ui-droppable-hover": "ui-state-hover"
-        },
-        drop: function(e, ui) {
-          $(this).addClass("ui-state-highlight").find("p").html("droppedtest")
-        }
-      });
-     } );-->
-   
     
