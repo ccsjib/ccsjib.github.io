@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Raleway"> <!--Google Fonts API code (copy paste)-->
+  href="https://fonts.googleapis.com/css?family=Raleway"> <!--Google Fonts API custom font code (copy paste)-->
     <head>
         <title>escape :)</title>
         <meta charset="utf-8">
         <style>
+          /*background color*/
         body {
           background-color: rgb(0, 205, 255);
           font-family: "Raleway", monospace;
@@ -21,25 +22,28 @@
       <h2 id="level">level 1</h2>
       
       <div id="entirelevel">
+        <!--hint/interactive images-->
        <img id="bolt-cutters" src="https://ccsjib.github.io/images/bolt-cutters.jpg" alt="bolt cutters" width="200px"></img>
        <img id="padlock" src="https://ccsjib.github.io/images/padlock.jpg" alt="padlock" width="100px"></img>
 
+       <!--hint-->
        <p id="cut-selection">You're gonna have to cut your way out of this one.</p>
+       <!--empty area for success message-->
        <p id="successful"></p>
 
-       <!-- code for button which links to new HTML file for next level-->
+       <!-- code for hidden button which shows and links to new HTML file for next level when level completed-->
        <button type="disabled" hidden id="next">next :)</button>
        </div>
+
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
        <script>
-         
          //https://mkyong.com/jquery/how-to-detect-copy-paste-and-cut-behavior-with-jquery/
          //https://stackoverflow.com/questions/13424721/javacript.jquery-select-the-larger-of-two-numbers
          //hides next level button
          $("#next").hide();
-        //detects when user cuts sentence underneath pictures 
+         //detects when user cuts sentence underneath pictures 
         $("#cut-selection").bind("cut", function(){
-             //console.log("testing eventlistener oncut");
              //changes locked padlock to unlocked padlock image
              $("#padlock").attr({"src": "https://ccsjib.github.io/images/unlocked-padlock.jpg", "height": 120});
              //adds success message
@@ -52,10 +56,9 @@
             $("#next").on("click", function(){
              window.location.href ="escape-game2.html";
            });
-           
-             // html dom events: https://www.w3schools.com/jsref/dom_obj_event.asp
 
           /*
+          HTML dom events: https://www.w3schools.com/jsref/dom_obj_event.asp
           Original ideas and psuedocode: 
            Somehow need to use cookies so my page remembers what I did.
            load HTML page with reload icon image on laptop screen in background
