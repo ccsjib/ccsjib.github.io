@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--<html>-->
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Raleway"> <!--Google Fonts API code (copy paste)-->
+    <head>
+        <title>Rummy</title>
+        <meta charset="utf-8">
+        <style>
+        body {
+          background-color: rgb(0, 205, 255);
+          font-family: "Raleway", monospace;
+        }
+         
+        
+        </style>
+    </head>
+    <body>
+      <h1>Play Rummy</h1>
+      
+      <h2 id="level"></h2>
+      
+      <div id="game">
+       <img id="bolt-cutters" src="" alt="card" width="200px"></img>
+       <img id="padlock" src="" alt="player"></img>
+
+       <p id="cut-word"></p>
+       <p id="successful"></p>
+
+       <button type="disabled" id="next">next :)</button>
+       </div>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+       <script>
+         
+         //https://mkyong.com/jquery/how-to-detect-copy-paste-and-cut-behavior-with-jquery/
+         var boltCutterHeight = $("#bolt-cutters").height();
+         //console.log(boltCutterHeight);
+         var padlockHeight = $("#padlock").height();
+         var lockWidth = 100;
+         //https://stackoverflow.com/questions/13424721/javacript.jquery-select-the-larger-of-two-numbers
+         var imgHeight = 100
+         //Math.max(boltCutterHeight, padlockHeight);
+         console.log(imgHeight);
+         //var levelNum = 1;
+         //var levelUp = function(){
+          //$("#entirelevel").text("");
+          //levelNum ++;
+         // $("#level").text("level " + levelNum + " :)");
+         //};
+         
+         $("#next").hide();
+         $("#padlock").attr("width", lockWidth + "px");
+           $("#cut-word").bind("cut", function(){
+             //console.log("testing eventlistener oncut");
+             $("#padlock").attr({"src": "https://ccsjib.github.io/images/unlocked-padlock.jpg", "height": 120});
+             $("#successful").html("<strong>yay you did it :)</strong>");
+             console.log(imgHeight);
+             $("#next").show(1000);
+            });
+            //https://stackoverflow.com/questions/2238368/how-to-make-a-button-redirect-to-another-page-using-jquery-or-just-javascript
+            //when next button clicked, open new HTML file for next level
+           $("#next").on("click", function(){
+             window.location.href ="escape-game2.html";
+              levelUp();
+              $("#entirelevel").html("<img src =\"https://ccsjib.github.io/images/fullscreen.jpg\" </img>");
+           });
+           
+
+
+
+
+
+
+          /*
+          
+          */
+       </script>
+ 
+      </body>

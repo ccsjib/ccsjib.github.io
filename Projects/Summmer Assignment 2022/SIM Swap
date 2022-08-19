@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Raleway"> <!--Google Fonts API code (copy paste)-->
+    <head>
+        <title>SIM Swapping!</title>
+        <meta charset="utf-8">
+        <style>
+        body {
+          background-color: rgb(0, 205, 255);
+          font-family: "Raleway", monospace;
+        }
+         
+        
+        </style>
+    </head>
+    <body>
+        <h1>SIM Swapping!</h1>
+        <img id="mainimage" src="https://www.realestate-tokyo.com/media/8269/simcard4.jpg" alt="SIM card next to SIM card slot of phone" width="250px"></img>
+      <h2>What is it?!</h2>
+      
+        
+        <h3>SIM Swapping is when an attacker changes the <strong>SIM card</strong> that your phone number is attached to. This bypasses 2FA because the attacker now has locked you out of your own phone number including calls and text messages.</h3>
+        <p>This is an interesting cyber threat because instead of hacking using technical methods, in many cases the attacker manipulates customer service representatives into allowing them access into the victim's account. They can do this by impersonating the customer using any details they have, and when the rep asks for the PIN this is when they attempt to make the rep feel bad and allow them into the account. </p>
+        <p>The attacker may tell the rep various stories to explain the situation. For example, they may say that they lost “their” phone or had it stolen. </p>
+        <p>T-Mobile was more susceptible to these attacks until about 6 months ago. This was because until recently they did not make use of 2FA methods like sending a Number Transfer PIN to customer online accounts. Competitors like AT&T and Verizon have already been doing this.</p>
+      
+       
+       
+      
+       <!-- code for hidden button which shows and links to new HTML file for next level when level completed-->
+       <button type="enabled" id="next">next :)</button>
+       </div>
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+       <script>
+         $("next").on("click", function(){
+
+         $("mainimage").attr("src", "https://cdn.funinformatique.com/wp-content/uploads/2021/06/17180819/pirater-carte-sim-780x448.jpg")
+           });
+       </script>
+ 
+      </body>
