@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Raleway"> <!--Google Fonts API code (copy paste)-->
+    <head>
+        <title>Github homepage :)</title>
+        <meta charset="utf-8">
+        <style>
+        body {
+          background-color: rgb(0, 205, 255);
+          font-family: "Raleway", monospace;
+        }
+        #robloxnoob {
+          border: 4px ridge rgb(255, 255, 0);
+          width: 300px;
+        }
+        </style>
+    </head>
+    <body>
+      <h1>smith's github homepage :)</h1>
+       <ul>
+         <li><a href="Projects/travel-webpage">Travel Webpage</a></li>
+         <li><a href="Projects/perfect-trip">Picture-Perfect Trip</a></li>
+         <li><a href="Projects/blog">Blog</a></li>
+         <li><a href="Projects/recipe-book">Recipe Book</a></li>
+         <li><a href="Projects/event-invite">Event Invite</a></li>
+         <li><a href="Projects/escape-game/escape-game.html">Escape game !</a></li>
+         <li><a href="Projects/word-game.html"><strong>my amazing word scramble yay :)</strong></a></li>
+         <li><a href="Projects/Summmer Assignment 2022/dsfsd.html">dsf dsfsd</a></li>
+       </ul>
+       <br>
+       <br>
+       <img id="robloxnoob" src="https://sdflkjhdsjhfdlkfjdslfkdjflkjflksjlkds.test/gif" alt="sdf">
