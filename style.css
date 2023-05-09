@@ -22,25 +22,32 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    transition: opacity 1s ease-in-out;
-    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 5s ease-out;
   }
   
   #new-website {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-    z-index: 1;
+    display: block;
   }
   
-  #container.show-new #old-website {
-    opacity: 0;
+  #popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
   }
   
-  #container.show-new #new-website {
-    opacity: 1;
-    z-index: 2;
+  #popup.show {
+    display: block;
   }
   
