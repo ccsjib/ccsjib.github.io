@@ -14,14 +14,33 @@ body {
     overflow: hidden;
   }
   
-  #old-website,
+  #container {
+    position: relative;
+  }
+  
+  #old-website {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 2;
+  }
+  
   #new-website {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 100%;
-    transform: translateX(0);
-    transition: transform 1s ease-out;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+  }
+  
+  #container.show-new #old-website {
+    opacity: 0;
+  }
+  
+  #container.show-new #new-website {
+    opacity: 1;
+    z-index: 2;
   }
   
