@@ -6,5 +6,10 @@ window.onload = function() {
     setTimeout(function() {
       document.getElementById('popup').style.display = 'none';
     }, 5000);
+    setTimeout(function() {
+      document.getElementById('popup').style.display = 'block';
+      document.getElementById('new-website').style.display = 'none';
+
+    }, 7000);
   }, 7000);
 };
